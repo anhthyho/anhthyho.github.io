@@ -2,25 +2,29 @@
 <!HTML guide written by Robert Cobb @ https://medium.com/@robbcobb/make-a-resume-website-from-scratch-991845147ec>
 <html lang="en">
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Poppins|Quicksand|Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Staatliches|Poppins|Quicksand|Roboto&display=swap" rel="stylesheet">
 		<style>
 			#content {
-				float: left ;
-				width: 60%; 
-				position: absolute;
-				top: 200px;
-				left: 20%;
-				max-width: 700px;
+				margin-left: 20%;
+  				padding-top: 0px;
+  				padding-bottom: 50px;
+ 				max-width: 700px;
+  				width: 50%
 			}
 			#navbar {
 				overflow: hidden;
-				background-color: #ceadd0;
 				position: fixed;
 				right: 82%;
-				bottom: 10%;
+				top: 200px;
 				width: 15%;
 				max-width: 200px;
-
+			}
+			#rightcol {
+				position: absolute;
+				margin-left: 70%;
+				top: 12%;
+				width: 25%;
+				max-width: 300px;
 			}
 			.center-fit {
 				display: block;
@@ -28,32 +32,68 @@
 				margin-right: auto;
 				width: 90%;
 			}
+			.footer{
+				  position: absolute;
+				  right: 0;
+				  bottom: 0;
+				  left: 0;
+				  padding: 1rem;
+				  background-color: #efefef;
+				  text-align: center;
+			}
 			.fit {
 				max-width: 100%;
 				max-height: 200px;
 			}
-
+			.containerzero{
+				padding-bottom: 0px;
+				padding-top: 0;
+			}
+			body {
+  				position: relative;
+  				margin: 0;
+  				padding-bottom: 6rem;
+  				min-height: 100%;
+  			}
 			h1{
 				font-family: 'Poiret One', cursive;
-				color: #ceadd0;}
+				color: #ceadd0;
+				margin: 0;
+			}
 			h2{
-				font-family: 'Roboto';
-				font-size: 1em;  
-				color: #6e686e;}
-			h3{
-				font-family: 'Poiret One', cursive; 
-				
+				font-family: 'Quicksand', sans-serif;
+				font-size: 0.9em;  
 				color: #6e686e;
+			}
+			h3{
+				font-family: 'Quicksand', sans-serif;
+				color: #6e686e;
+				margin: 0;
+			}
+			h4{
+				font-family: 'Quicksand', sans-serif;
+				font-size: 0.8em;
+				color: #dcc1dd;
+				line-height: 0.8em;
+				margin: 0;
 			}
 			h5{
 				font-family: 'Poiret One', cursive;
 				font-size: 1.5em;
 				color: #dcc1dd;
+				margin: 0;
+			}
+			h6{
+				font-family: 'Roboto';
+				font-size: 0.7em;
+				color: #dcc1dd;
+				margin: 0;
 			}
 			p{
 				font-family: 'Roboto';
-				font-size: 0.9em;
+				font-size: 0.8em;
 				color: #6e686e;
+
 			}
 			li{
 				font-family: 'Roboto';
@@ -67,6 +107,7 @@
 			}
 			#headerwrap{
 				text-align: center;
+				padding-bottom: 0;
 			}
 			</style>
 			<title>Anh-Thy Ho</title>
@@ -74,10 +115,10 @@
 	
 	<body>
 		<div class="header" id="headerwrap">
-			<img class="fit" src="https://66.media.tumblr.com/aeef5ca44204f1700e54bd8ec64577b1/tumblr_ptby3gitrW1qg9zhfo3_1280.png" alt="Anh-Thy Ho header">
+			<a href="https://anhthyho.github.io"><img class="fit" src="https://66.media.tumblr.com/aeef5ca44204f1700e54bd8ec64577b1/tumblr_ptby3gitrW1qg9zhfo3_1280.png" alt="Anh-Thy Ho header"></a>
 			<div class="container">
 				<div class="row centered">
-					<h3 >Aspiring Professional Keyboard Smasher  </h3>
+					<h3 >Aspiring Professional Keyboard Smasher</h3>
 				</div><!--/.row-->
 			</div><!--/.container-->
 		</div><!--/.#headerwrap-->
@@ -88,9 +129,9 @@
 						<div class="container">
 							<div class="row"> 
 								<h5>ABOUT</h5>
-								<p>Currently a student at SJSU pursuing a Computer Science degree with an interest in Cyber Security. I am learning about Cyber Security through CTFs, SANS CyberAces and working on my Security+ cert. Creating GUI applications in Java is my hobby- TextFields are my friend and using BorderFrame is easily the best Layout Manager. </p>
+								<p>Currently a student at SJSU pursuing a Computer Science degree with an interest in Cyber Security. I am learning about Cyber Security through CTFs, SANS CyberAces and working on my Security+ cert. Creating GUI applications in Java is my hobby- TextFields are my friend and using BorderFrame is my favorite past time. </p>
 								<p><a href="https://drive.google.com/file/d/1E8D4YbclZ8JuGsJKgR39rliYJ1mAXiOw/view?usp=sharing" target = "_blank">
-									<i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
+									<i class="icon-file"></i> <sm>DOWNLOAD RESUME</sm></a></p>
 							</div><!--/.row-->
 							<br>
 						<hr>
@@ -98,7 +139,7 @@
 					</div><!--/ #intro-->
 				<section id="resume" name="resume"></section>
 					<!-- EDUCATION SECTION -->
-					<div class="container desc">
+					<div class="container">
 						<div class="row">
 								<h5>EDUCATION</h5>
 								<!-- EDIT: education line 1 -->
@@ -108,20 +149,20 @@
 								<h2>Relevant Course Work:</h2>
 								<p>Object Oriented Design, Data Structures and Algorithms, Intro to Data Structures, Information Security, Computer Networks</p>
 							<img class="center-fit" src="https://66.media.tumblr.com/d4d01de1f7bcc13ad9c5d0a65bf4f02b/tumblr_ptby3gitrW1qg9zhfo1_1280.png">
-							<p>During my time at San Jose State, I've worked on multiple projects that have enabled me to learn more about computer science and why I want to pursue this field. In group settings, I am someone who is willing to work and contribute to the project. With projects such as a reservation system, organizers and calendars, I've learned about MySQL and other aspects of Java coding that I am looking to expand and learn more about.</p>
+							<p>During my time at San Jose State, I've worked multiple projects that have enabled me to learn more about computer science and why I want to pursue this field. In group settings, I am someone who is willing to work and contribute to the project. With projects such as a reservation system, organizers and calendars, I've learned about MySQL and other aspects of Java coding that I am looking to expand and learn more about.</p>
 						 </div><!--/.row -->
 						<br>
 						<hr>
 					</div><!--/.container -->
 					<!-- WORK SECTION -->
-					<div class="container desc">
+					<div class="container">
 						<div class="row">
 							<div class="col-lg-2 col-lg-offset-1">
 								<h5>WORK</h5>
 							</div>
 							<!-- EDIT: work line 1 -->
 							<div class="col-lg-6">
-								<p class="tight"><t>Information Technology Support Analyst </t><br/>Genomic Health <br/></p>
+								<h2>Information Technology Support Analyst </h2><h4>Genomic Health</h4>
 								<p> Wrote and compiled Powershell Scripts in conjunction with Active Directory and SCCM </p>
 								<ul> 
 									<li>Remoting into computers, running scripts to check disk health, BIOS information, BitLocker status (Projects including Lab Machine Computer Disk Checks)</li>
@@ -137,18 +178,17 @@
 									<li>Performance Analytics dashboard configurations using Content Management and Widgets - creating indicators and breakdowns</li>
 									<li>Improved process of asset management and control of company assets</li></ul>
 								<img class="center-fit" src="https://66.media.tumblr.com/5d0686de9830518ad8bdce1178c8cea1/tumblr_ptby3gitrW1qg9zhfo2_1280.jpg" alt="Performance Analytics Dashboard">
-							</p>
-						</div>
-					</div><!--/.row -->
+							</div>
+						</div><!--/.row -->
 					<br>
 					<hr>
 				</div><!--/.container -->
 				<!-- PROJECTS SECTION -->
-				<div class="container desc">
+				<div class="container">
 					<div class="row">
 						<h5>PROJECTS/What am I Working On?</h5>
 						 <!-- EDIT: awards line 1-->
-						 <p><t>Cyber Security Certifications and Work</t></p>
+						 <p><t>Cyber Security Certifications and Education</t></p>
 						 	<ul>
 						 		<li>Currently working on Security+ certification from CompTIA </li>
 						 		<li>PicoCTF and OverTheWire Bandit</li>
@@ -162,12 +202,25 @@
 							</ul>
 						</div>
 					</div><!--/.row -->
-					<br>
-				</div><!--/.container --></div>
+				<br>
+			</div><!--/.container --></div>
+		<div class = "footer">
+			<h3>Want to get to know me? Check these out~ </h3>
+			<h3><a href="https://www.linkedin.com/in/anhthy-ho/"><img src="https://dl.boxcloud.com/api/2.0/internal_files/477862652791/versions/505859622391/representations/png_paged_2048x2048/content/1.png?access_token=1!RSvDqkQVfyGgJakFi8bJY4w3LxiNAmGAhlqGjQ80V0AsYz5kqD_DykVvfP7BlkiBBcmcFRclOk0CCq_HVYHTKABPWS86Qu4cQGNyEvVi_KF88tdIlJgfW_WEJegF2q6gDVa-drTLJAoboCuVHHOmx7ofnWlKSjLe9DHXGzoHLJUvj2Talgs86cV-E3tGWlBGxyEsCppZB7vkgvsOUqSL0ZhA57aiiTFEuTK2PzXoH433yvWNP8A-PmIySyYxhXdxf3tHCmEgNnJ1o6lhwjkYpwD--d-TO57ZCSBju4hpaYVabIKdSz0eT16Cfd-LUvVAKuBQ1W01Bx3Hq3aI5x4tZ9p7MMh26GzHSmQo2vfz7FxzpfjmXt_3qjCPaA-x8glKEb-xExlP-4kJJjc4V1UoZeqUn0V3sXEgB14GrNMw4tEKrUCcHxYTawZMax21CZK-TTd1yq8TA5CewyF6OTqDBjxZjFV9lPMkXJGQUxXxDPxxm_3qOnIxALb0sBDia19V1w_oiGgmfPJ82oVN39VQ-cf0Q1FmdO5oWmJmHB4PSBWNJEtOde733dYF3giEyE0GVw..&box_client_name=box-content-preview&box_client_version=2.12.0" width="30" height="30" title="LinkedIn" alt="LinkedIn"></a></h3>
+			
+			<h6>Designed and created by Anh-Thy Ho</h6>
+		</div>
 		<div id="navbar">
 			<div class = "container">
 				<h3><a href="mailto:anhthynho@yahoo.com">Email</a> </h3>
 				<h3><a href="https://www.linkedin.com/in/anhthy-ho/" target = "_blank">LinkedIn</a></h3>
+			</div>
+		</div>
+		<div id="rightcol">
+			<div class = "container">
+				<img class="center-fit" src="https://dl.boxcloud.com/api/2.0/internal_files/477993264676/versions/506001942676/representations/png_paged_2048x2048/content/1.png?access_token=1!fubYLzHvGg1G60C_SrXVrhdZbAIQkDO2hODq-ZovBYPxJi4FGxF6lnInPhFmE7m6BBQ9G8MCZmiAJFklwIscMQLAb9sJ98S0D0v5uhcp2_CzVz8QCPh0kVkVCWYPzb3tGyQ41chdUHpVoigpqM3Deh7XlTn8ndRbP3_iMsqIIAbDlt_Cj0abdoRCQnjZKlBKcX0FcTFoRd1_evnsxHdKFNqj6suQYsaboawL3Qqsc3uB7IabKP-ZVVcSjEN26s_Q-P7S-EsDSErPNHOJyH9SrpEe39oar2xtrUZJrCuQJTvDH6eOQ60ZMp9DaPgcLgCNqukhp0OugVbrCBNNStgwtgFBWgpZBValu5saETphKDe62BR75kDCzOXTiRiRP9KMgwQz85Uu2RZ8k5leiJk1pWLQnVeglkNHRWXUJvoPI7_PF4v5qFrqlCdkuU2s6zuO-LLu0MhAmo3ecwwDmdBeoIJzdGpZAxPKupFXI6WCXpKOvbhKL7o4cRoJrV4BngC5X9nAsmk6lX-FRxwXDH9hDCQFYJim3_pNSdVzDNXOUwsfJBtYtpSoqAhyxp6bHkQbpA..&box_client_name=box-content-preview&box_client_version=2.12.0">
+				<h3>Straight up testing second column</h3>
+				<h5>nanI</h5>
 			</div>
 		</div>
 	</body>
