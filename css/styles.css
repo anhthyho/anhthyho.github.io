@@ -8,8 +8,9 @@ body{
 }
 
 #container{
-	width: 400px;
-	margin: auto;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
 	padding: 50px;
 	box-sizing: border-box;
 	background: url('https://cdn.inspirationhut.net/wp-content/uploads/2014/09/handmade-paper-pattern.jpg') top left repeat;
