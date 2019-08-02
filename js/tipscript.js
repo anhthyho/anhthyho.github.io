@@ -31,12 +31,16 @@ function calculateTip(){
 	total = Math.round(total*100)/100; 
 	total = total.toFixed(2);
 
-	var billTotal = (parseFloat(cost) + parseFloat(total));
+	var indCost = cost/people; 
+	indCost = Math.round(indCost*100)/100; 
+	indCost = indCost.toFixed(2);
+
+	var billTotal = (parseFloat(indCost) + parseFloat(total));
 	billTotal = Math.round(billTotal*100)/100; 
 	billTotal = billTotal.toFixed(2);
 
 	document.getElementById("tip").style.display = "block";
-	document.getElementById("tp").innerHTML = total;
+	document.getElementById("tp").innerHTML = indCost +" + " + total;
 
 	document.getElementById("bill").style.display = "block";
 	document.getElementById("bp").innerHTML = billTotal; 
