@@ -1,0 +1,122 @@
+/* styles.css */
+body{
+	background: #333 url('https://ih1.redbubble.net/image.337424696.6375/flat,550x550,075,f.u1.jpg') top left repeat;
+	background-size: cover; 
+	color: #532827;
+	font-family: 'Patrick Hand', cursive;
+}
+
+#container{
+	width: 400px;
+	margin: 40px auto 0;
+	padding: 50px;
+	box-sizing: border-box;
+	background: url('https://cdn.inspirationhut.net/wp-content/uploads/2014/09/handmade-paper-pattern.jpg') top left repeat;
+	box-shadow: 0 10px 15px -8px #000; 
+	-webkit-border-radius: 5px;
+	-moz-border-radium: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+h1{
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: solid 1px #ddd;
+}
+
+form{
+	text-align: left;
+}
+
+form label{
+	display: block;
+	margin: 25px 0;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Patrick Hand', cursive;
+}
+form input,
+form select{
+	padding: 8px;
+	margin:; 10px 0; 
+	font-size: 20px;
+	font-family: 'Patrick Hand', cursive;
+}
+
+form input[type ="text"]{
+	width: 90px;
+	font-size: 20px;
+	font-family: 'Patrick Hand', cursive;
+
+}
+
+button{
+	background: #B896C3;
+	color: white;
+	border: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 20px 30px;
+	width: 100%;
+	font-family: 'Patrick Hand', cursive;
+}
+
+button:hover {
+	background: #F1C3D3;
+	border-bottom-color: #111;
+}
+
+button active {
+	position: relative;
+	top: 1px;
+}
+
+#tip{
+	font-size: 40px;
+	margin-top: 30px;
+}
+
+#tip:before{
+	content: "tip amount";
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	text-transform: uppercase;
+}
+
+#tip sup{
+	font-size: 24px;
+	top: -18px;
+}
+
+#tip small{
+	font-size: 14px;
+	font-weight: bold;
+	display: 
+}
+
+#bill{
+	font-size: 50px;
+	margin-top: 30px;
+}
+
+#bill:before{
+	content: "bill amount";
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	text-transform: uppercase;
+}
+
+#bill sup{
+	font-size: 24px;
+	top: -18px;
+}
+
+#bill small{
+	font-size: 14px;
+	font-weight: bold;
+	display: 
+}
+
