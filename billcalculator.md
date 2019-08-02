@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- with help from Coding Rails youtube page https://www.youtube.com/watch?v=3L7ACcO7LY0 -->
 <html lang="en">
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Lacquer|Pacifico|Patrick+Hand|Raleway&display=swap" rel="stylesheet">
