@@ -1,5 +1,4 @@
 /* styles.css */
-
 body{
 	background: #333 url('https://ih1.redbubble.net/image.337424696.6375/flat,550x550,075,f.u1.jpg') top left repeat;
 	background-size: cover; 
@@ -21,11 +20,14 @@ body{
 	text-align: center;
 }
 
+
+
 h1{
 	margin: 0 0 20px;
 	padding: 0 0 20px;
 	border-bottom: solid 1px #ddd;
 	font-family: 'Patrick Hand', cursive;
+
 }
 
 form{
@@ -81,7 +83,7 @@ button active {
 }
 
 #tip:before{
-	content: "tip amount";
+	content: "ind. cost + tip amount";
 	font-size: 14px;
 	font-weight: bold;
 	display: block;
