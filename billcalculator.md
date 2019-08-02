@@ -6,7 +6,7 @@
 
 		<title> Bill Calculator </title>
 		<link rel="stylesheet" type="text/css" href ="normalize.css">
-		<link rel="stylesheet" type="text/css" href ="anhthyho.github.io/css/styles.css">
+		<link rel="stylesheet" type="text/css" href ="/css/styles.css">
 	</head>
 
 	<body>
@@ -46,6 +46,6 @@
 				<small id="each">each</small>
 			</div><!-- bill total -->
 		</div> <!-- container --> 
-		<script type = "text/javascript" src="anhthyho.github.io/js/tipscript.js"></script>
+		<script type = "text/javascript" src="/js/tipscript.js"></script>
 	</body>
 </html>
