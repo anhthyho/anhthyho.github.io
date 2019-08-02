@@ -9,7 +9,7 @@ body{
 
 #container{
 	width: 400px;
-	margin: 40px auto 0;
+	margin: auto;
 	padding: 50px;
 	box-sizing: border-box;
 	background: url('https://cdn.inspirationhut.net/wp-content/uploads/2014/09/handmade-paper-pattern.jpg') top left repeat;
